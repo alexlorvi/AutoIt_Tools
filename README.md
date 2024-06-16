@@ -18,4 +18,5 @@
 Конфігурація копіювання задається в ІНІ-файлі
 Файл конфігурації має бути в Unicode-16
 
+![robocopy_gui.png](https://github.com/alexlorvi/AutoIt_Tools/blob/main/screenshot/robocopy_gui.png)
 ---
