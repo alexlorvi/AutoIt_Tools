@@ -13,6 +13,11 @@
 ![fix_1c_cache_gui.png](https://github.com/alexlorvi/AutoIt_Tools/blob/main/screenshot/fix_1c_cache_gui.png)
 ---
 
+## Clear_1c_cache_all
+Clear cache of all local users based on registry subkeys **ProfileList**
+All log is saved into Application EventLog
+---
+
 ## robocopy_gui
 Графічний інтерфейс покрокового копіювання файлів.
 Конфігурація копіювання задається в ІНІ-файлі
