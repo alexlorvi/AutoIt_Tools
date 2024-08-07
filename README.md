@@ -15,7 +15,9 @@
 
 ## Clear_1c_cache_all
 Clear cache of all local users based on registry subkeys **ProfileList**
+
 All log is saved into Application EventLog
+
 ---
 
 ## robocopy_gui
