@@ -417,7 +417,7 @@ Func _KillProcess($PName)
 EndFunc
 
 Func _guiCreate()
-	$hGUI = GUICreate("IIT WOG Config 0.0.2", 406, 436)
+	$hGUI = GUICreate("IIT WOG Config 0.0.3", 406, 436)
 
    $group_path = GUICtrlCreateGroup("Файлове сховище сертифікатів на СВС", 3, -1, 400, 127)
    $input_crt_path = GUICtrlCreateInput("", 13, 19, 300, 21)
@@ -480,7 +480,10 @@ Func _main()
 				_FixChkBoxs()
 			Case $btp_path_change
 			  $sMessage = "Файлове сховище сертифікатів на СВС"
-			  FileSelectFolder($sMessage, "")
+			  Local $sFileSelectFolder = FileSelectFolder($sMessage, "")
+				If Not @error Then
+				    GUICtrlSetData($input_crt_path, $sFileSelectFolder)
+				EndIf
 			Case $btn_set_def
 			  _SetDefaults()
 		    Case $save
